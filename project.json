@@ -1,0 +1,10 @@
+{
+    "name": "kevin3",
+    "version": "1.0.0",
+    "manifest_version": 1,
+    "project_type": "application",
+    "executable_type": "scratch",
+    "executable": "kevin3.xml",
+    "author": "cpren",
+    "minimum_firmware_version": 42
+}

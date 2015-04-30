@@ -1,8 +1,8 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="1" x="15" y="82">
+  <block type="oled_cleardisplay" id="1" x="-34" y="33">
     <next>
-      <block type="comment_comment" id="2">
-        <field name="TEXT">WATER FALL!!!!!!!!!!!!</field>
+      <block type="oled_drawtext" id="158">
+        <field name="TEXT">WATER FALL!!!!!!!!!!!!!!!!</field>
         <next>
           <block type="variables_set" id="24" inline="true">
             <field name="VAR">delay</field>
@@ -104,7 +104,7 @@
                       </block>
                     </statement>
                     <next>
-                      <block type="comment_comment" id="19">
+                      <block type="oled_drawtext" id="173">
                         <field name="TEXT">I NEED TO GO # 1!!!!!!!! :(</field>
                         <next>
                           <block type="movement_stop" id="20"></block>

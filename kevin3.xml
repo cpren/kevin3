@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="1" x="-1" y="64">
+  <block type="oled_cleardisplay" id="1" x="15" y="82">
     <next>
       <block type="comment_comment" id="2">
         <field name="TEXT">WATER FALL!!!!!!!!!!!!</field>
@@ -8,7 +8,7 @@
             <field name="VAR">delay</field>
             <value name="VALUE">
               <block type="math_number" id="33">
-                <field name="NUM">1000</field>
+                <field name="NUM">1310</field>
               </block>
             </value>
             <next>
@@ -42,8 +42,8 @@
                         <next>
                           <block type="robot_delay" id="10" inline="true">
                             <value name="DELAY">
-                              <block type="math_number" id="11">
-                                <field name="NUM">1000</field>
+                              <block type="variables_get" id="142">
+                                <field name="VAR">delay</field>
                               </block>
                             </value>
                             <next>
@@ -51,8 +51,8 @@
                                 <next>
                                   <block type="robot_delay" id="13" inline="true">
                                     <value name="DELAY">
-                                      <block type="math_number" id="14">
-                                        <field name="NUM">1315</field>
+                                      <block type="variables_get" id="148">
+                                        <field name="VAR">delay</field>
                                       </block>
                                     </value>
                                     <next>
@@ -62,7 +62,7 @@
                                           <block type="math_arithmetic" id="53" inline="true">
                                             <field name="OP">ADD</field>
                                             <value name="A">
-                                              <block type="variables_get" id="59">
+                                              <block type="variables_get" id="149">
                                                 <field name="VAR">delay</field>
                                               </block>
                                             </value>

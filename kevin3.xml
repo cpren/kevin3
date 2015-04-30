@@ -131,7 +131,12 @@
                               <block type="oled_drawtext" id="173">
                                 <field name="TEXT">I NEED TO GO NUMBER ONE!!!!!!!!</field>
                                 <next>
-                                  <block type="movement_stop" id="20"></block>
+                                  <block type="oled_drawtext" id="216">
+                                    <field name="TEXT">ONE!!!!!!!!</field>
+                                    <next>
+                                      <block type="movement_stop" id="20"></block>
+                                    </next>
+                                  </block>
                                 </next>
                               </block>
                             </next>

@@ -129,7 +129,7 @@
                             </value>
                             <next>
                               <block type="oled_drawtext" id="173">
-                                <field name="TEXT">I NEED TO GO # 1!!!!!!!! :(</field>
+                                <field name="TEXT">I NEED TO GO NUMBER 1!!!!!!!!</field>
                                 <next>
                                   <block type="movement_stop" id="20"></block>
                                 </next>

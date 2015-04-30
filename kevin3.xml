@@ -146,31 +146,44 @@
                                       <block type="oled_drawtext" id="237">
                                         <field name="TEXT">DOWN THE WATER FALL</field>
                                         <next>
-                                          <block type="movement_forward" id="251">
+                                          <block type="robot_delay" id="278" inline="true">
+                                            <value name="DELAY">
+                                              <block type="math_number" id="279">
+                                                <field name="NUM">1000</field>
+                                              </block>
+                                            </value>
                                             <next>
-                                              <block type="robot_delay" id="253" inline="true">
-                                                <value name="DELAY">
-                                                  <block type="math_number" id="260">
-                                                    <field name="NUM">500</field>
-                                                  </block>
-                                                </value>
+                                              <block type="movement_forward" id="251">
                                                 <next>
-                                                  <block type="oled_setcursor" id="261" inline="true">
-                                                    <value name="STARTX">
-                                                      <block type="math_number" id="262">
-                                                        <field name="NUM">10</field>
-                                                      </block>
-                                                    </value>
-                                                    <value name="STARTY">
-                                                      <block type="math_number" id="263">
-                                                        <field name="NUM">10</field>
+                                                  <block type="robot_delay" id="253" inline="true">
+                                                    <value name="DELAY">
+                                                      <block type="math_number" id="260">
+                                                        <field name="NUM">500</field>
                                                       </block>
                                                     </value>
                                                     <next>
-                                                      <block type="oled_drawtext" id="277">
-                                                        <field name="TEXT">AHHHHHHHHHHH!!!!!!!!!!!!!!!!!!</field>
+                                                      <block type="oled_cleardisplay" id="288">
                                                         <next>
-                                                          <block type="movement_stop" id="20"></block>
+                                                          <block type="oled_setcursor" id="261" inline="true">
+                                                            <value name="STARTX">
+                                                              <block type="math_number" id="262">
+                                                                <field name="NUM">10</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="STARTY">
+                                                              <block type="math_number" id="263">
+                                                                <field name="NUM">10</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="oled_drawtext" id="277">
+                                                                <field name="TEXT">AHHHHHHHHHHH!!!!!!!!!!!!!!!!!!</field>
+                                                                <next>
+                                                                  <block type="movement_stop" id="20"></block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
                                                         </next>
                                                       </block>
                                                     </next>

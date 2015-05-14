@@ -179,24 +179,33 @@
                                                               <block type="oled_drawtext" id="45">
                                                                 <field name="TEXT">AHHHHHHHHHHH!!!!!!!!!!!!!!!!!!</field>
                                                                 <next>
-                                                                  <block type="oled_cleardisplay" id="46">
+                                                                  <block type="robot_delay" id="52" inline="true">
+                                                                    <value name="DELAY">
+                                                                      <block type="math_number" id="53">
+                                                                        <field name="NUM">2000</field>
+                                                                      </block>
+                                                                    </value>
                                                                     <next>
-                                                                      <block type="oled_setcursor" id="47" inline="true">
-                                                                        <value name="STARTX">
-                                                                          <block type="math_number" id="48">
-                                                                            <field name="NUM">10</field>
-                                                                          </block>
-                                                                        </value>
-                                                                        <value name="STARTY">
-                                                                          <block type="math_number" id="49">
-                                                                            <field name="NUM">10</field>
-                                                                          </block>
-                                                                        </value>
+                                                                      <block type="oled_cleardisplay" id="46">
                                                                         <next>
-                                                                          <block type="oled_drawtext" id="50">
-                                                                            <field name="TEXT">Ha you fell for it</field>
+                                                                          <block type="oled_setcursor" id="47" inline="true">
+                                                                            <value name="STARTX">
+                                                                              <block type="math_number" id="48">
+                                                                                <field name="NUM">10</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="STARTY">
+                                                                              <block type="math_number" id="49">
+                                                                                <field name="NUM">10</field>
+                                                                              </block>
+                                                                            </value>
                                                                             <next>
-                                                                              <block type="movement_stop" id="51"></block>
+                                                                              <block type="oled_drawtext" id="50">
+                                                                                <field name="TEXT">Ha you fell for it</field>
+                                                                                <next>
+                                                                                  <block type="movement_stop" id="51"></block>
+                                                                                </next>
+                                                                              </block>
                                                                             </next>
                                                                           </block>
                                                                         </next>
